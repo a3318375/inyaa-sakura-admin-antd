@@ -134,6 +134,7 @@ const authHeaderInterceptor = (url: string, options: RequestConfig) => {
 };
 
 const responseInterceptors = (response: Response, options: RequestConfig) => {
+  console.log(111, response)
   if (response.status === 401) {
     window.location.href = 'https://api.inyaw.com/inyaa-admin/toLogin'
   }

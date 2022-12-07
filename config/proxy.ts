@@ -34,9 +34,9 @@ export default {
   },
   pre: {
     '/api/': {
-      target: 'your pre url',
+      target: 'https://api.inyaw.com/inyaa-admin',
       changeOrigin: true,
-      pathRewrite: { '^': '' },
+      pathRewrite: { '^/api' : '' },
     },
   },
 };
